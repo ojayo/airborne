@@ -1,0 +1,197 @@
+body {
+	background-color: lightgray;
+	margin: 0;
+	font-family: Avenir, sans-serif;
+	padding-top: 35px;
+}
+
+h2 {
+	margin: none;
+	padding: none;
+}
+
+p a {
+	color: blue;
+	text-shadow: .5px .5px .5px white;
+	text-decoration: none;
+}
+
+p a:hover {
+	color: darkblue;
+}
+
+/* ---------------------------------------- */
+/* Everything related to the Navigation Bar */
+
+nav {
+	overflow: hidden;
+	background-color: #333;
+	opacity: 0.80;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	float: left; /* not needed with navs, though */
+	z-index: 6;
+}
+
+nav a {
+	display: block;
+	float: left;
+	font-family: cursive;
+	font-size: 1em;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px 0px;
+	color: white;
+	margin: 0 20px;
+	font-size: 20px;
+}
+
+nav a:hover {
+	background-color: lightgray;
+	color: black;
+}
+
+nav a:active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+nav .icon {
+	display: none;
+}
+
+@media screen and (max-width: 750px) {
+	.topnav a:not(:first-child) {display: none;}
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.topnav.responsive {position: relative;}
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+/* ------------------------------------------ */
+/* Everything related to the Cascading Images */
+
+div {
+	border: 0px solid red;
+	width: 100%; /* relative to what? */
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+
+img { 
+	display: block;
+	width: 100%;
+	padding: 5px;
+}
+
+.portfolio .travel {
+	height: 500px;
+	object-fit: contain;
+	float: left;
+	position: static;
+}
+
+.farmhouse-sheets {
+	width: 350px;
+	float: left;
+}
+
+.text-overlay {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+}
+
+.caption {
+	position: absolute;
+	font-weight: bold;
+}
+
+.halfsize {
+	width: 49%;
+	display: inline-block;
+	margin: auto;
+	padding: 0 0 0 0;
+}
+
+.list {
+	width: 50%;
+}
+
+#intro {
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+	text-align: left;
+	margin-left: 50px;
+}
+
+#portfolio {
+	top: 20%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+	text-align: center;
+}
+
+#farmhouse {
+	top: 40%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+	text-align: center;
+}
+
+#travelmap {
+	top: 60%;
+	left: 60%;
+	transform: translate( -50%, -50% );
+	text-align: center;
+}
+
+#programmer {
+	color: white;
+	top: 20%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+	text-align: left;
+	margin-left: 30px;
+}
+
+
+#aboutjay {
+	color: white;
+	top: 15%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+	text-align: center;
+}
+
+#aboutmepic {
+	width: 200px;
+}
+
+#contactjay {
+	top: 15%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+	text-align: center;
+}
+
+

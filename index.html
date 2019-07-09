@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jay Osborne, programmer and designer</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- gets the hamburger icon -->
+</head>
+<body>
+
+	<nav class="topnav" id="myTopnav">
+		<a id="logo" href="./index.html">Jay Osborne</a>
+		<a href="./portfolio.html">portfolio</a>
+		<a href="./farmhouse.html">farmhouse</a>
+		<a href="./travel.html">travel</a>
+		<a href="./about.html">about</a>
+		<a href="./contact.html">contact</a>
+		<a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+			<i class="fa fa-bars"></i>
+		</a> <!-- adding hamburger menu (change later) -->
+	</nav>
+
+	<div id="wrapper">
+		<div class="text-overlay">
+			<img src="./images/homepage/watercolor-banner.jpg">
+			<div  id="intro" class="caption">
+				<h2>Meet Jay.</h2>
+			</div>
+		</div>
+
+		<div class="text-overlay" >
+			<img src="./images/homepage/arch-work.png">
+			<div id="portfolio" class="caption">
+				<h2>Jay was an architect.</h2>
+				<p><a href="./portfolio.html">See his work >></a></p>
+			</div>
+		</div>
+
+		<div class="text-overlay" >
+			<img src="./images/homepage/farmhouse-section.png">
+			<div id="farmhouse"  class="caption">
+				<h2>He even designed a house for <em>you.</em></h2>
+				<p><a href="./farmhouse.html">Learn more >></a></p>
+			</div>
+		</div>	
+
+		<div class="text-overlay" >
+			<img src="./images/homepage/world_travel_map.jpg">
+			<div  id="travelmap" class="caption">
+				<h2>Recently, he traveled a little...</h2>
+				<p><a href="./travel.html">Learn more >></a></p>
+			</div>
+		</div>
+
+		<div class="text-overlay" >
+			<img src="./images/homepage/code-immersion.jpg">
+			<div id="programmer" class="caption">
+				<h2>...and then decided to<br> immerse himself in code.</h2>
+				<p><a href="http://www.github.com/ojayo">Check out his work >></a></p>
+			</div>
+		</div>
+
+		<div class="halfsize text-overlay">
+			<img src="./images/homepage/saint-jay.jpg">
+			<div id="aboutjay"  class="caption">
+				<h2>Who <em>is</em> this guy?</h2>
+				<p><a href="./about.html">Learn more >></a></p>
+			</div>
+		</div>
+
+		<div class="halfsize text-overlay">
+			<img src="./images/homepage/contact-jay.jpg">
+			<div id="contactjay" class="caption">
+				<h2>Say hi.</h2>
+				<p><a href="./contact.html">Contact Jay >></a></p>
+			</div>
+		</div>
+
+		<footer>contact info here</footer>
+	</div>
+
+
+	<script>
+		/* Just one function... please? */
+		function responsiveNav() {
+			let x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} //else {
+			//	x.className = "topnav";
+			//}
+		}
+	</script>
+
+
+</body>
+</html>
