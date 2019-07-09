@@ -1,3 +1,2 @@
-# first_repo
-# airborne
-this will be a personal website
+
+This is the first iteration of my personal website.
