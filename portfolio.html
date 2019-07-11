@@ -4,22 +4,32 @@
 	<title>Jay Osborne's Portfolio</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./main.css">
+		<!-- gets the hamburger icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- a quick little favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 </head>
 <body>
 
 	<nav class="topnav" id="myTopnav">
-		<a id="logo" href="./index.html">Jay Osborne</a>
-		<a href="./portfolio.html">portfolio</a>
-		<a href="./farmhouse.html">farmhouse</a>
-		<a href="./travel.html">travel</a>
-		<a href="./about.html">about</a>
-		<a href="./contact.html">contact</a>
-		<a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-			<i class="fa fa-bars"></i>
-		</a> <!-- adding hamburger menu (change later) -->
+		<a id="title" href="./index.html">
+			<span id="title-label">Jay Osborne</span>
+			<span class="sub-label">designer + developer</span>
+		</a>
+		<div id="right-links">
+			<a href="./portfolio.html">portfolio</a>
+			<a href="./farmhouse.html">farmhouse</a>
+			<a href="./travel.html">travel</a>
+			<a href="./index.html#about-jay">about</a>
+			<a href="./index.html#contact-jay">contact</a>
+			<a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+				<i class="fa fa-bars"></i>
+			</a> <!-- adding hamburger menu (change later) -->
+		</div>
+
 	</nav>
 
-	<div id="container">
+	<div class="gallery-wrapper">
 		<h1>Portfolio</h1>
 		<img class="portfolio" src="./images/portfolio/3x5+Chapel+1.jpg">
 		<img class="portfolio" src="./images/portfolio/Carport+sections.jpg">
@@ -32,5 +42,8 @@
 		<img class="portfolio" src="./images/portfolio/Monastery+Model+black.jpg">
 		<img class="portfolio" src="./images/portfolio/triangle+house+card.jpg">
 	</div>
+
+	<script src="script.js"></script> <!-- WHY IS THIS NOT WORKING ANYMORE ? -->
+
 </body>
 </html>
