@@ -4,60 +4,83 @@
 	<title>The Open-Source House Designed By Jay Osborne</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./main.css">
+		<!-- gets the hamburger icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- a quick little favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 </head>
 <body>
 
 	<nav class="topnav" id="myTopnav">
-		<a id="logo" href="./index.html">Jay Osborne</a>
-		<a href="./portfolio.html">portfolio</a>
-		<a href="./farmhouse.html">farmhouse</a>
-		<a href="./travel.html">travel</a>
-		<a href="./about.html">about</a>
-		<a href="./contact.html">contact</a>
-		<a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-			<i class="fa fa-bars"></i>
-		</a> <!-- adding hamburger menu (change later) -->
+		<a id="title" href="./index.html">
+			<span id="title-label">Jay Osborne</span>
+			<span class="sub-label">designer + developer</span>
+		</a>
+		<div id="right-links">
+			<a href="./portfolio.html">portfolio</a>
+			<a href="./farmhouse.html">farmhouse</a>
+			<a href="./travel.html">travel</a>
+			<a href="./index.html#about-jay">about</a>
+			<a href="./index.html#contact-jay">contact</a>
+			<a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+				<i class="fa fa-bars"></i>
+			</a> <!-- adding hamburger menu (change later) -->
+		</div>
+
 	</nav>
 
-	<div id="container">
-		<img class="portfolio" src="./images/farmhouse/framing.png">
-		<h1>The Open-Source Farmhouse</h1>
-		<p>A 100-year-old farmhouse stands abandoned and overgrown in a Virginia forest. Iconic in form, yet humble in size, this design is a tribute to that forgotten place.</p>
-		<p>This project is the first of its kind. This is the first open-source house design that you could conceivably build from -- and live within. The CAD file and drawing set, linked below, provides the information necessary to build this simple house.</p>
-		<p>For me, this is an art project. I've created all the content from scratch (including each symbol and every detail) in order to give it away for free under a creative commons license. I've never designed a house like this before, and perhaps never will again. But that's okay-- I'm not an architectural stylist.</p>
-		<p>This project is a way for me to reconnect with my roots before drifting into the frontier. I'm experimenting with ways to implement designs on a digital, web-based interface. Architects still have not embraced the "Internet Revolution", to use an outdated mannerism. Their drawings are still printed as big clumsy books (without any * multi-media * content) and each physical set of drawings can only be viewed by one or two people at once. This is hopelessly outdated. Unfortunately, architects would prefer to be useless rather than update their visual language. And don't dare challenge their business model.</p>
-		<p>So here it is for free. A labor of love. I hope it's educational for anybody who wants to know what architects can create. And I hope it brings joy to anybody who wishes for a simple, humble house.</p>
-		<br>
+	<div class="gallery-wrapper">
+
+			<img class="farmhouse-model" src="./images/farmhouse/farmhouse-perspective-exterior.jpg">
+			<img class="farmhouse-model" src="./images/farmhouse/farmhouse-perspective-framing.jpg">
+			<img class="farmhouse-model" src="./images/farmhouse/farmhouse-model-plan-1.jpg">
+			<img class="farmhouse-model" src="./images/farmhouse/farmhouse-model-floor-2.jpg">
+			<img class="farmhouse-model" src="./images/farmhouse/farmhouse-model-section-1.jpg">
+			<img class="farmhouse-model" src="./images/farmhouse/farmhouse-model-section-2.jpg">
+			<img class="farmhouse-model" src="./images/farmhouse/farmhouse-model-section-3.jpg">
+
+		<div class="text-block-2">
+			<h1>The Open-Source Farmhouse</h1><br>
+			<p>A 100-year-old farmhouse stands abandoned and overgrown in a Virginia forest. Iconic in form, yet humble in size, this design is a tribute to that forgotten place.</p><br>
+			<p>This project is the first of its kind. This is the first open-source house design that you could conceivably build from -- and live within. The CAD file and drawing set, linked below, provides the information necessary to build this simple house.</p><br>
+			<p>For me, this is an art project. I've created all the content from scratch (including each symbol and every detail) in order to give it away for free under a creative commons license. I've never designed a house like this before, and perhaps never will again. But that's okay-- I'm not an architectural stylist.</p><br>
+			<p>This project is a way for me to reconnect with my roots before drifting into the frontier. I'm experimenting with ways to implement designs on a digital, web-based interface. Architects still have not embraced the "Internet Revolution", to use an outdated mannerism. Their drawings are still printed as big clumsy books (without any * multi-media * content) and each physical set of drawings can only be viewed by one or two people at once. This is hopelessly outdated. Unfortunately, architects would prefer to be useless rather than update their visual language. And don't dare challenge their business model.</p><br>
+			<p>So here it is for free. A labor of love. I hope it's educational for anybody who wants to know what architects can create. And I hope it brings joy to anybody who wishes for a simple, humble house.</p>
+			<br>
+		</div>
 
 
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A11.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A12.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A13.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A14.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A15.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A16.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A17.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A20.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A21.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A22.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A23.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A24.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A25.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A30.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A31.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A32.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A40.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A41.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A42.jpg">
-		<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A43.jpg">
+		<div id="thumbnail-sheets">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A11.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A12.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A13.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A14.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A15.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A16.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A17.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A20.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A21.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A22.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A23.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A24.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A25.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A30.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A31.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A32.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A40.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A41.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A42.jpg">
+			<img class="farmhouse-sheets" src="./images/farmhouse/thumbnails/A43.jpg">
+		</div>
 
-
-		<a href="./downloads/Farmhouse Model-Jay Osborne.pdf">Download the renderings</a><br>
-		<a href="./downloads/Farmhouse-CAD-Set.pdf">Download the construction document set</a><br>
+		<div id="download-farmhouse">
+			<a href="./downloads/Farmhouse Model-Jay Osborne.pdf">Download the renderings</a><br>
+			<a href="./downloads/Farmhouse-CAD-Set.pdf">Download the construction document set</a><br>
+		</div>
 		<!-- TOO BIG!!! <a href="./downloads/Farmhouse-Model-Jay-Osborne.skp" download>Download the digital model</a> -->
 	</div>
 
-
+	<script src="script.js"></script> <!-- WHY IS THIS NOT WORKING ANYMORE ? -->
 
 </body>
 </html>
